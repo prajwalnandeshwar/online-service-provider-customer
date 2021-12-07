@@ -1,0 +1,37 @@
+.home-bg {
+  background-color: #f4f4f2;
+}
+.service-section-height {
+  height: 55ch;
+  margin-top: 15vh;
+}
+
+.bg-watermark {
+  position: relative;
+  overflow-x: hidden;
+  background-image: url('../../../Images/Watermark.jpeg');
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: 1;
+}
+
+.bg-watermark::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  width: 100%;
+  background: #f4f4f2;
+  opacity: 0.2;
+  height: 100%;
+  z-index: -1;
+}
+
+/* .Middler {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+} */
